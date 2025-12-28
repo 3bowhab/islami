@@ -4,6 +4,7 @@ import 'package:islami/helper/app_colors.dart';
 import 'package:islami/helper/app_routes.dart';
 import 'package:islami/helper/app_text_styles.dart';
 import 'package:islami/helper/pages_list.dart';
+import 'package:islami/service/prefs_service.dart';
 
 
 class OnBoardingViews extends StatelessWidget {
@@ -30,7 +31,8 @@ class OnBoardingViews extends StatelessWidget {
           borderRadius: BorderRadius.circular(25),
         ),
       ),
-      onDone: () {
+      onDone: () async {
+        await PrefsService.setIntroSeen();
         Navigator.pushReplacementNamed(context, AppRoutes.homeView);
       },
     );
