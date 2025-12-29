@@ -1,6 +1,10 @@
 // ignore_for_file: prefer_single_quotes
 class Assets {
   Assets._();
+  
+  /// Assets for imagesBackground
+  /// assets/images/Background.png
+  static const String imagesBackground = "assets/images/Background.png";
 
   /// Assets for imagesBranding
   /// assets/images/branding.png
