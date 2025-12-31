@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
+import 'package:islami/helper/app_images.dart';
 import 'package:islami/helper/app_text_styles.dart';
 
 // List of onboarding pages.
@@ -43,7 +44,7 @@ PageViewModel pageViewModel({required String title, String body = "", required i
       bottom: false,
       child: Column(
         children: [
-          Image.asset('assets/images/islami.png'),
+          Image.asset(Assets.imagesIslami),
           Expanded(child: Image.asset('assets/images/onboarding$imageNumber.png')),
         ],
       ),

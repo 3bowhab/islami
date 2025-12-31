@@ -3,7 +3,7 @@ import 'package:introduction_screen/introduction_screen.dart';
 import 'package:islami/helper/app_colors.dart';
 import 'package:islami/helper/app_routes.dart';
 import 'package:islami/helper/app_text_styles.dart';
-import 'package:islami/helper/pages_list.dart';
+import 'package:islami/model/pages_list.dart';
 import 'package:islami/service/prefs_service.dart';
 
 
