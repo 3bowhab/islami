@@ -16,9 +16,9 @@ class OnBoardingViews extends StatelessWidget {
       pages: pages,
       showBackButton: true,
       globalBackgroundColor: AppColors.black,
-      next: Text("Next", style: AppTextStyles().goldBold(16)),
-      done: Text("Finish", style: AppTextStyles().goldBold(16)),
-      back: Text("Back", style: AppTextStyles().goldBold(16)),
+      next: Text("Next", style: AppTextStyles.goldBold(16)),
+      done: Text("Finish", style: AppTextStyles.goldBold(16)),
+      back: Text("Back", style: AppTextStyles.goldBold(16)),
       autoScrollDuration: 10000,
       controlsPadding: const EdgeInsets.only(
         bottom: 50, 

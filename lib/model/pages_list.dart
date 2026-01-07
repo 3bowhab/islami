@@ -34,11 +34,11 @@ final List<PageViewModel> pages = [
 // Method to create a PageViewModel.
 PageViewModel pageViewModel({required String title, String body = "", required int imageNumber}) {
   return PageViewModel(
-    titleWidget: Text(title, style: AppTextStyles().goldBold(24)),
+    titleWidget: Text(title, style: AppTextStyles.goldBold(24)),
     bodyWidget: Text(
       body,
       textAlign: .center,
-      style: AppTextStyles().goldBold(20),
+      style: AppTextStyles.goldBold(20),
     ),
     image: SafeArea(
       bottom: false,
