@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islami/helper/app_colors.dart';
+import 'package:islami/helper/app_images.dart';
 import 'package:islami/helper/app_lists.dart';
 import 'package:islami/helper/app_text_styles.dart';
 import 'package:islami/model/tabs_model.dart';
@@ -45,6 +46,12 @@ class _HomeViewState extends State<HomeView> {
                 label: tabs[index].label,
               ),
             ),
+          ),
+          body: Column(
+            children: [
+              Image.asset(Assets.imagesIslami),
+              tabs[selectedIndex].content,
+            ],
           ),
         ),
       ],
