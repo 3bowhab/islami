@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class ScreenUtils {
+class AppUtils {
   static double width(BuildContext context) {
     return MediaQuery.of(context).size.width;
   }

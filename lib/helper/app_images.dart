@@ -74,6 +74,10 @@ class Assets {
   /// assets/images/2x/branding.png
   static const String images2xBranding = "assets/images/2x/branding.png";
 
+  /// Assets for images2xImgMostRecent
+  /// assets/images/2x/img_most_recent.png
+  static const String images2xImgMostRecent = "assets/images/2x/img_most_recent.png";
+
   /// Assets for images2xIslami
   /// assets/images/2x/islami.png
   static const String images2xIslami = "assets/images/2x/islami.png";
@@ -110,6 +114,10 @@ class Assets {
   /// assets/images/3x/branding.png
   static const String images3xBranding = "assets/images/3x/branding.png";
 
+  /// Assets for images3xImgMostRecent
+  /// assets/images/3x/img_most_recent.png
+  static const String images3xImgMostRecent = "assets/images/3x/img_most_recent.png";
+
   /// Assets for images3xIslami
   /// assets/images/3x/islami.png
   static const String images3xIslami = "assets/images/3x/islami.png";
@@ -145,6 +153,10 @@ class Assets {
   /// Assets for imagesBranding
   /// assets/images/branding.png
   static const String imagesBranding = "assets/images/branding.png";
+
+  /// Assets for imagesImgMostRecent
+  /// assets/images/img_most_recent.png
+  static const String imagesImgMostRecent = "assets/images/img_most_recent.png";
 
   /// Assets for imagesIslami
   /// assets/images/islami.png
