@@ -106,6 +106,10 @@ class Assets {
   /// assets/images/2x/splash.png
   static const String images2xSplash = "assets/images/2x/splash.png";
 
+  /// Assets for images2xSuraNumber
+  /// assets/images/2x/sura_number.png
+  static const String images2xSuraNumber = "assets/images/2x/sura_number.png";
+
   /// Assets for images3xBackground
   /// assets/images/3x/Background.png
   static const String images3xBackground = "assets/images/3x/Background.png";
@@ -146,6 +150,10 @@ class Assets {
   /// assets/images/3x/splash.png
   static const String images3xSplash = "assets/images/3x/splash.png";
 
+  /// Assets for images3xSuraNumber
+  /// assets/images/3x/sura_number.png
+  static const String images3xSuraNumber = "assets/images/3x/sura_number.png";
+
   /// Assets for imagesBackground
   /// assets/images/Background.png
   static const String imagesBackground = "assets/images/Background.png";
@@ -185,5 +193,9 @@ class Assets {
   /// Assets for imagesSplash
   /// assets/images/splash.png
   static const String imagesSplash = "assets/images/splash.png";
+
+  /// Assets for imagesSuraNumber
+  /// assets/images/sura_number.png
+  static const String imagesSuraNumber = "assets/images/sura_number.png";
 }
 

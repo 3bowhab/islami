@@ -3,6 +3,7 @@ import 'package:islami/helper/app_text_styles.dart';
 import 'package:islami/helper/app_utils.dart';
 import 'package:islami/widgets/most_recently.dart';
 import 'package:islami/widgets/search_field.dart';
+import 'package:islami/widgets/suras_list.dart';
 
 class QuranTabContent extends StatelessWidget {
   const QuranTabContent({super.key});
@@ -18,6 +19,7 @@ class QuranTabContent extends StatelessWidget {
           SearchField(),
           Text('Most Recently', style: AppTextStyles.offWhiteBold(16)),
           MostRecently(),
+          SurasList(),
         ],
       ),
     );

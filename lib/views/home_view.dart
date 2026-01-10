@@ -55,7 +55,7 @@ class _HomeViewState extends State<HomeView> {
               child: Column(
                 children: [
                   Image.asset(Assets.imagesIslami),
-                  tabs[selectedIndex].content,
+                  Expanded(child: tabs[selectedIndex].content),
                 ],
               ),
             ),
