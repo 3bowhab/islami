@@ -2,11 +2,13 @@ class SuraModel {
   String arabicName;
   String englishName;
   String ayaCount;
+  int index;
 
   SuraModel({
     required this.arabicName,
     required this.englishName,
     required this.ayaCount,
+    required this.index,
   });
 
   static List<SuraModel> suraList = List.generate(
@@ -15,6 +17,7 @@ class SuraModel {
       arabicName: arabicQuranSuras[index],
       englishName: englishQuranSurahs[index],
       ayaCount: ayaNumber[index],
+      index: index,
     ),
   );
 

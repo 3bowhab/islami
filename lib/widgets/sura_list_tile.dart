@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islami/helper/app_images.dart';
+import 'package:islami/helper/app_routes.dart';
 import 'package:islami/helper/app_text_styles.dart';
 import 'package:islami/helper/app_utils.dart';
 import 'package:islami/model/sura_model.dart';
@@ -11,6 +12,7 @@ class SuraListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      onTap: () => Navigator.pushNamed(context, AppRoutes.souraDetailsView, arguments: SuraModel.suraList[index]),
       contentPadding: EdgeInsets.zero,
       leading: Container(
         width: AppUtils.width(context) * (70 / 430),
