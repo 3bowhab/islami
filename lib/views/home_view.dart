@@ -53,6 +53,7 @@ class _HomeViewState extends State<HomeView> {
             ),
             body: SafeArea(
               child: Column(
+                crossAxisAlignment: .stretch,
                 children: [
                   Image.asset(Assets.imagesIslami),
                   Expanded(child: tabs[selectedIndex].content),
