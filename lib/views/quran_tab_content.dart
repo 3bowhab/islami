@@ -10,18 +10,15 @@ class QuranTabContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: .symmetric(horizontal: AppUtils.width(context) * 0.04),
-      child: Column(
-        crossAxisAlignment: .start,
-        spacing: AppUtils.height(context) * 0.02,
-        children: [
-          SearchField(),
-          Text('Most Recently', style: AppTextStyles.offWhiteBold(16)),
-          MostRecently(),
-          SurasList(),
-        ],
-      ),
+    return Column(
+      crossAxisAlignment: .start,
+      spacing: AppUtils.height(context) * 0.02,
+      children: [
+        SearchField(),
+        Text('Most Recently', style: AppTextStyles.offWhiteBold(16)),
+        MostRecently(),
+        SurasList(),
+      ],
     );
   }
 }

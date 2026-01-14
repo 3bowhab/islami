@@ -2,6 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:islami/helper/app_images.dart';
 import 'package:islami/model/tabs_model.dart';
 import 'package:islami/views/quran_tab_content.dart';
+import 'package:islami/views/radio_tab_content.dart';
 import 'package:islami/views/sebha_tab_content.dart';
 
 class AppLists {
@@ -27,8 +28,8 @@ class AppLists {
     TabsModel(
       label: 'Radio',
       iconpath: Assets.iconsRadio,
-      backgroudImage: Assets.imagesBackground,
-      content: Container(),
+      backgroudImage: Assets.imagesRadioBackground,
+      content: RadioTabContent(),
     ),
     TabsModel(
       label: 'Time',

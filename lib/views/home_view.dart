@@ -3,6 +3,7 @@ import 'package:islami/helper/app_colors.dart';
 import 'package:islami/helper/app_images.dart';
 import 'package:islami/helper/app_lists.dart';
 import 'package:islami/helper/app_text_styles.dart';
+import 'package:islami/helper/app_utils.dart';
 import 'package:islami/model/tabs_model.dart';
 import 'package:islami/widgets/custom_navigation_des.dart';
 
@@ -52,12 +53,15 @@ class _HomeViewState extends State<HomeView> {
               ),
             ),
             body: SafeArea(
-              child: Column(
-                crossAxisAlignment: .stretch,
-                children: [
-                  Image.asset(Assets.imagesIslami),
-                  Expanded(child: tabs[selectedIndex].content),
-                ],
+              child: Padding(
+                padding: .symmetric(horizontal: AppUtils.width(context) * 0.04),
+                child: Column(
+                  crossAxisAlignment: .stretch,
+                  children: [
+                    Image.asset(Assets.imagesIslami),
+                    Expanded(child: tabs[selectedIndex].content),
+                  ],
+                ),
               ),
             ),
           ),
