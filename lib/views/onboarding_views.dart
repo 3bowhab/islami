@@ -28,7 +28,7 @@ class OnBoardingViews extends StatelessWidget {
         color: AppColors.grey,
         activeSize: const Size(22, 10),
         activeShape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(25),
+          borderRadius: .circular(25),
         ),
       ),
       onDone: () async {

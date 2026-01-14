@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:islami/helper/app_colors.dart';
 import 'package:islami/helper/app_routes.dart';
 import 'package:islami/service/prefs_service.dart';
 import 'package:islami/views/home_view.dart';
 import 'package:islami/views/onboarding_views.dart';
+import 'package:islami/views/soura_details_view.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,7 +26,18 @@ class MyApp extends StatelessWidget {
       routes: {
         AppRoutes.onboardingView: (context) => const OnBoardingViews(),
         AppRoutes.homeView: (context) => const HomeView(),
+        AppRoutes.souraDetailsView: (context) => const SouraDetailsView(),
       },
+      theme: ThemeData(
+        scaffoldBackgroundColor: AppColors.black,
+        appBarTheme: AppBarTheme(
+          centerTitle: true,
+          backgroundColor: AppColors.black,
+          foregroundColor: AppColors.gold,
+          elevation: 0,
+          scrolledUnderElevation: 0,
+        ),
+      ),
     );
   }
 }

@@ -14,4 +14,16 @@ class AppTextStyles {
     fontWeight: FontWeight.bold,
     fontFamily: 'janna',
   );
+  static TextStyle offWhiteBold(double size) => TextStyle(
+    color: AppColors.offWhite ,
+    fontSize: size,
+    fontWeight: FontWeight.bold,
+    fontFamily: 'janna',
+  );
+  static TextStyle blackBold(double size) => TextStyle(
+    color: AppColors.black,
+    fontSize: size,
+    fontWeight: FontWeight.bold,
+    fontFamily: 'janna',
+  );
 }
