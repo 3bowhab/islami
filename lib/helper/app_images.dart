@@ -470,6 +470,14 @@ class Assets {
   /// assets/icons/2x/hadith.png
   static const String icons2xHadith = "assets/icons/2x/hadith.png";
 
+  /// Assets for icons2xPause
+  /// assets/icons/2x/Pause.png
+  static const String icons2xPause = "assets/icons/2x/Pause.png";
+
+  /// Assets for icons2xPlay
+  /// assets/icons/2x/play.png
+  static const String icons2xPlay = "assets/icons/2x/play.png";
+
   /// Assets for icons2xQuran
   /// assets/icons/2x/quran.png
   static const String icons2xQuran = "assets/icons/2x/quran.png";
@@ -486,9 +494,25 @@ class Assets {
   /// assets/icons/2x/time.png
   static const String icons2xTime = "assets/icons/2x/time.png";
 
+  /// Assets for icons2xVolume Cross
+  /// assets/icons/2x/Volume Cross.png
+  static const String icons2xVolumeCross = "assets/icons/2x/Volume Cross.png";
+
+  /// Assets for icons2xVolume High
+  /// assets/icons/2x/Volume High.png
+  static const String icons2xVolumeHigh = "assets/icons/2x/Volume High.png";
+
   /// Assets for icons3xHadith
   /// assets/icons/3x/hadith.png
   static const String icons3xHadith = "assets/icons/3x/hadith.png";
+
+  /// Assets for icons3xPause
+  /// assets/icons/3x/Pause.png
+  static const String icons3xPause = "assets/icons/3x/Pause.png";
+
+  /// Assets for icons3xPlay
+  /// assets/icons/3x/play.png
+  static const String icons3xPlay = "assets/icons/3x/play.png";
 
   /// Assets for icons3xQuran
   /// assets/icons/3x/quran.png
@@ -506,9 +530,25 @@ class Assets {
   /// assets/icons/3x/time.png
   static const String icons3xTime = "assets/icons/3x/time.png";
 
+  /// Assets for icons3xVolumeCross
+  /// assets/icons/3x/Volume_Cross.png
+  static const String icons3xVolumeCross = "assets/icons/3x/Volume_Cross.png";
+
+  /// Assets for icons3xVolumeHigh
+  /// assets/icons/3x/Volume_High.png
+  static const String icons3xVolumeHigh = "assets/icons/3x/Volume_High.png";
+
   /// Assets for iconsHadith
   /// assets/icons/hadith.png
   static const String iconsHadith = "assets/icons/hadith.png";
+
+  /// Assets for iconsPause
+  /// assets/icons/Pause.png
+  static const String iconsPause = "assets/icons/Pause.png";
+
+  /// Assets for iconsPlay
+  /// assets/icons/play.png
+  static const String iconsPlay = "assets/icons/play.png";
 
   /// Assets for iconsQuran
   /// assets/icons/quran.png
@@ -526,6 +566,14 @@ class Assets {
   /// assets/icons/time.png
   static const String iconsTime = "assets/icons/time.png";
 
+  /// Assets for iconsVolume Cross
+  /// assets/icons/Volume Cross.png
+  static const String iconsVolumeCross = "assets/icons/Volume Cross.png";
+
+  /// Assets for iconsVolume High
+  /// assets/icons/Volume High.png
+  static const String iconsVolumeHigh = "assets/icons/Volume High.png";
+
   /// Assets for images2xBackground
   /// assets/images/2x/Background.png
   static const String images2xBackground = "assets/images/2x/Background.png";
@@ -533,6 +581,10 @@ class Assets {
   /// Assets for images2xBranding
   /// assets/images/2x/branding.png
   static const String images2xBranding = "assets/images/2x/branding.png";
+
+  /// Assets for images2xImgBottomDecoration
+  /// assets/images/2x/img_bottom_decoration.png
+  static const String images2xImgBottomDecoration = "assets/images/2x/img_bottom_decoration.png";
 
   /// Assets for images2xImgMostRecent
   /// assets/images/2x/img_most_recent.png
@@ -562,6 +614,10 @@ class Assets {
   /// assets/images/2x/onboarding5.png
   static const String images2xOnboarding5 = "assets/images/2x/onboarding5.png";
 
+  /// Assets for images2xRadioBackground
+  /// assets/images/2x/radio_background.png
+  static const String images2xRadioBackground = "assets/images/2x/radio_background.png";
+
   /// Assets for images2xSebhaBackground
   /// assets/images/2x/sebha_background.png
   static const String images2xSebhaBackground = "assets/images/2x/sebha_background.png";
@@ -573,6 +629,10 @@ class Assets {
   /// Assets for images2xSebhaHead
   /// assets/images/2x/sebha_head.png
   static const String images2xSebhaHead = "assets/images/2x/sebha_head.png";
+
+  /// Assets for images2xSoundWave
+  /// assets/images/2x/sound_wave.png
+  static const String images2xSoundWave = "assets/images/2x/sound_wave.png";
 
   /// Assets for images2xSouraDetailsScreen
   /// assets/images/2x/soura_details_screen.png
@@ -593,6 +653,10 @@ class Assets {
   /// Assets for images3xBranding
   /// assets/images/3x/branding.png
   static const String images3xBranding = "assets/images/3x/branding.png";
+
+  /// Assets for images3xImgBottomDecoration
+  /// assets/images/3x/img_bottom_decoration.png
+  static const String images3xImgBottomDecoration = "assets/images/3x/img_bottom_decoration.png";
 
   /// Assets for images3xImgMostRecent
   /// assets/images/3x/img_most_recent.png
@@ -622,6 +686,10 @@ class Assets {
   /// assets/images/3x/onboarding5.png
   static const String images3xOnboarding5 = "assets/images/3x/onboarding5.png";
 
+  /// Assets for images3xRadioBackground
+  /// assets/images/3x/radio_background.png
+  static const String images3xRadioBackground = "assets/images/3x/radio_background.png";
+
   /// Assets for images3xSebhaBackground
   /// assets/images/3x/sebha_background.png
   static const String images3xSebhaBackground = "assets/images/3x/sebha_background.png";
@@ -633,6 +701,10 @@ class Assets {
   /// Assets for images3xSebhaHead
   /// assets/images/3x/sebha_head.png
   static const String images3xSebhaHead = "assets/images/3x/sebha_head.png";
+
+  /// Assets for images3xSoundWave
+  /// assets/images/3x/sound_wave.png
+  static const String images3xSoundWave = "assets/images/3x/sound_wave.png";
 
   /// Assets for images3xSouraDetailsScreen
   /// assets/images/3x/soura_details_screen.png
@@ -653,6 +725,10 @@ class Assets {
   /// Assets for imagesBranding
   /// assets/images/branding.png
   static const String imagesBranding = "assets/images/branding.png";
+
+  /// Assets for imagesImgBottomDecoration
+  /// assets/images/img_bottom_decoration.png
+  static const String imagesImgBottomDecoration = "assets/images/img_bottom_decoration.png";
 
   /// Assets for imagesImgMostRecent
   /// assets/images/img_most_recent.png
@@ -682,6 +758,10 @@ class Assets {
   /// assets/images/onboarding5.png
   static const String imagesOnboarding5 = "assets/images/onboarding5.png";
 
+  /// Assets for imagesRadioBackground
+  /// assets/images/radio_background.png
+  static const String imagesRadioBackground = "assets/images/radio_background.png";
+
   /// Assets for imagesSebhaBackground
   /// assets/images/sebha_background.png
   static const String imagesSebhaBackground = "assets/images/sebha_background.png";
@@ -693,6 +773,10 @@ class Assets {
   /// Assets for imagesSebhaHead
   /// assets/images/sebha_head.png
   static const String imagesSebhaHead = "assets/images/sebha_head.png";
+
+  /// Assets for imagesSoundWave
+  /// assets/images/sound_wave.png
+  static const String imagesSoundWave = "assets/images/sound_wave.png";
 
   /// Assets for imagesSouraDetailsScreen
   /// assets/images/soura_details_screen.png
