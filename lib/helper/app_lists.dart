@@ -4,6 +4,7 @@ import 'package:islami/model/tabs_model.dart';
 import 'package:islami/views/quran_tab_content.dart';
 import 'package:islami/views/radio_tab_content.dart';
 import 'package:islami/views/sebha_tab_content.dart';
+import 'package:islami/views/time_tab_content.dart';
 
 class AppLists {
   List<TabsModel> tabs = [
@@ -35,7 +36,7 @@ class AppLists {
       label: 'Time',
       iconpath: Assets.iconsTime,
       backgroudImage: Assets.imagesBackground,
-      content: Container(),
+      content: TimeTabContent(),
     ),
   ];
 }
