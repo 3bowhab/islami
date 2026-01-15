@@ -91,7 +91,7 @@ class _SouraDetailsViewState extends State<SouraDetailsView> {
     );
   }
 
-  loadSuraFile(int index) async {
+  Future<void> loadSuraFile(int index) async {
     String suraContent = await rootBundle.loadString(
       'assets/files/sura/${index + 1}.txt',
     );

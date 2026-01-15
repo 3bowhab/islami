@@ -8,4 +8,8 @@ class AppUtils {
   static double height(BuildContext context) {
     return MediaQuery.of(context).size.height;
   }
+
+  static void hideKeyboard(BuildContext context) {
+    FocusScope.of(context).unfocus();
+  }
 }

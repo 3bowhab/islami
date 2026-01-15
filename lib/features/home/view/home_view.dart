@@ -20,9 +20,7 @@ class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        FocusScope.of(context).unfocus();
-      },
+      onTap: () => AppUtils.hideKeyboard(context),
       child: Stack(
         children: [
           Image.asset(
