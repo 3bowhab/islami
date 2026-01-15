@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:islami/helper/app_colors.dart';
-import 'package:islami/helper/app_routes.dart';
-import 'package:islami/service/prefs_service.dart';
-import 'package:islami/views/home_view.dart';
-import 'package:islami/views/onboarding_views.dart';
-import 'package:islami/views/soura_details_view.dart';
+import 'package:islami/core/theme/app_colors.dart';
+import 'package:islami/core/constants/app_routes.dart';
+import 'package:islami/data/service/prefs_service.dart';
+import 'package:islami/features/home/view/home_view.dart';
+import 'package:islami/features/onboarding/view/onboarding_views.dart';
+import 'package:islami/features/quran_tab/view/soura_details_view.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
