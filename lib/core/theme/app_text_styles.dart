@@ -26,4 +26,10 @@ class AppTextStyles {
     fontWeight: FontWeight.bold,
     fontFamily: 'janna',
   );
+  static TextStyle lightBlackBold(double size) => TextStyle(
+    color: AppColors.black.withValues(alpha: 0.7),
+    fontSize: size,
+    fontWeight: FontWeight.bold,
+    fontFamily: 'janna',
+  );
 }

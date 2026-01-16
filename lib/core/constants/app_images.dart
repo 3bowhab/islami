@@ -574,6 +574,14 @@ class Assets {
   /// assets/icons/Volume_High.png
   static const String iconsVolumeHigh = "assets/icons/Volume_High.png";
 
+  /// Assets for images2xAzkar1
+  /// assets/images/2x/azkar1.png
+  static const String images2xAzkar1 = "assets/images/2x/azkar1.png";
+
+  /// Assets for images2xAzkar2
+  /// assets/images/2x/azkar2.png
+  static const String images2xAzkar2 = "assets/images/2x/azkar2.png";
+
   /// Assets for images2xBackground
   /// assets/images/2x/Background.png
   static const String images2xBackground = "assets/images/2x/Background.png";
@@ -581,14 +589,6 @@ class Assets {
   /// Assets for images2xBranding
   /// assets/images/2x/branding.png
   static const String images2xBranding = "assets/images/2x/branding.png";
-
-  /// Assets for images2xImageLeft
-  /// assets/images/2x/image_left.png
-  static const String images2xImageLeft = "assets/images/2x/image_left.png";
-
-  /// Assets for images2xImageRight
-  /// assets/images/2x/image_right.png
-  static const String images2xImageRight = "assets/images/2x/image_right.png";
 
   /// Assets for images2xImgBottomDecoration
   /// assets/images/2x/img_bottom_decoration.png
@@ -654,6 +654,14 @@ class Assets {
   /// assets/images/2x/sura_number.png
   static const String images2xSuraNumber = "assets/images/2x/sura_number.png";
 
+  /// Assets for images3xAzkar1
+  /// assets/images/3x/azkar1.png
+  static const String images3xAzkar1 = "assets/images/3x/azkar1.png";
+
+  /// Assets for images3xAzkar2
+  /// assets/images/3x/azkar2.png
+  static const String images3xAzkar2 = "assets/images/3x/azkar2.png";
+
   /// Assets for images3xBackground
   /// assets/images/3x/Background.png
   static const String images3xBackground = "assets/images/3x/Background.png";
@@ -661,14 +669,6 @@ class Assets {
   /// Assets for images3xBranding
   /// assets/images/3x/branding.png
   static const String images3xBranding = "assets/images/3x/branding.png";
-
-  /// Assets for images3xImageLeft
-  /// assets/images/3x/image_left.png
-  static const String images3xImageLeft = "assets/images/3x/image_left.png";
-
-  /// Assets for images3xImageRight
-  /// assets/images/3x/image_right.png
-  static const String images3xImageRight = "assets/images/3x/image_right.png";
 
   /// Assets for images3xImgBottomDecoration
   /// assets/images/3x/img_bottom_decoration.png
@@ -734,6 +734,14 @@ class Assets {
   /// assets/images/3x/sura_number.png
   static const String images3xSuraNumber = "assets/images/3x/sura_number.png";
 
+  /// Assets for imagesAzkar1
+  /// assets/images/azkar1.png
+  static const String imagesAzkar1 = "assets/images/azkar1.png";
+
+  /// Assets for imagesAzkar2
+  /// assets/images/azkar2.png
+  static const String imagesAzkar2 = "assets/images/azkar2.png";
+
   /// Assets for imagesBackground
   /// assets/images/Background.png
   static const String imagesBackground = "assets/images/Background.png";
@@ -741,14 +749,6 @@ class Assets {
   /// Assets for imagesBranding
   /// assets/images/branding.png
   static const String imagesBranding = "assets/images/branding.png";
-
-  /// Assets for imagesImageLeft
-  /// assets/images/image_left.png
-  static const String imagesImageLeft = "assets/images/image_left.png";
-
-  /// Assets for imagesImageRight
-  /// assets/images/image_right.png
-  static const String imagesImageRight = "assets/images/image_right.png";
 
   /// Assets for imagesImgBottomDecoration
   /// assets/images/img_bottom_decoration.png
