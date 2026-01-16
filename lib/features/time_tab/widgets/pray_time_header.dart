@@ -33,11 +33,7 @@ class PrayTimeHeader extends StatelessWidget {
                   children: [
                     Text(
                       'Pray Time',
-                      style: AppTextStyles.blackBold(20).copyWith(
-                        color: AppTextStyles.blackBold(
-                          20,
-                        ).color!.withValues(alpha: 0.7),
-                      ),
+                      style: AppTextStyles.lightBlackBold(20),
                     ),
                     Text('Tuesday', style: AppTextStyles.blackBold(20)),
                   ],
