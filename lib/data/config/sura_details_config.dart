@@ -1,7 +1,7 @@
 import 'package:islami/data/models/sura_model.dart';
 
 class SuraDetailsConfig {
-  static List<SuraModel> suraList = List.generate(
+  static final List<SuraModel> suraList = List.generate(
     114,
     (index) => SuraModel(
       arabicName: arabicQuranSuras[index],
@@ -11,7 +11,7 @@ class SuraDetailsConfig {
     ),
   );
   
-  static List<String> arabicQuranSuras = [
+  static const List<String> arabicQuranSuras = [
     "الفاتحه",
     "البقرة",
     "آل عمران",
@@ -128,7 +128,7 @@ class SuraDetailsConfig {
     "الناس",
   ];
 
-  static List<String> englishQuranSurahs = [
+  static const List<String> englishQuranSurahs = [
     "Al-Fatiha",
     "Al-Baqarah",
     "Aal-E-Imran",
@@ -245,7 +245,7 @@ class SuraDetailsConfig {
     "An-Nas",
   ];
 
-  static List<String> ayaNumber = [
+  static const List<String> ayaNumber = [
     '7',
     '286',
     '200',
