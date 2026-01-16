@@ -738,8 +738,8 @@ class Assets {
   /// assets/images/azkar1.png
   static const String imagesAzkar1 = "assets/images/azkar1.png";
 
-  /// Assets for imagesAzkar1
-  /// assets/images/azkar1.png
+  /// Assets for imagesAzkar2
+  /// assets/images/azkar2.png
   static const String imagesAzkar2 = "assets/images/azkar2.png";
 
   /// Assets for imagesBackground

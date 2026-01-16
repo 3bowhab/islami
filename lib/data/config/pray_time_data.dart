@@ -8,10 +8,10 @@ class PrayTimeData {
   ];
 
   static const List<String> prayerTimes = [
-    '05:12 AM',
-    '12:30 PM',
-    '04:38 PM',
-    '06:45 PM',
-    '08:00 PM',
+    '05:17 AM',
+    '12:00 PM',
+    '02:52 PM',
+    '05:11 PM',
+    '06:34 PM',
   ];
 }
