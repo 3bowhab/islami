@@ -4,8 +4,10 @@ import 'package:islami/core/constants/app_images.dart';
 import 'package:islami/core/theme/app_text_styles.dart';
 
 class SearchField extends StatelessWidget {
+  final ValueChanged<String> onChanged;
   const SearchField({
     super.key,
+    required this.onChanged,
   });
 
   @override
@@ -13,6 +15,7 @@ class SearchField extends StatelessWidget {
     return TextFormField(
       style: AppTextStyles.whiteBold(16),
       cursorColor: AppColors.gold,
+      onChanged: onChanged,
       decoration: InputDecoration(
         labelText: 'Sura Name',
         labelStyle: AppTextStyles.whiteBold(16),
