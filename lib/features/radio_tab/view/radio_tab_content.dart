@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:islami/core/constants/app_images.dart';
 import 'package:islami/features/radio_tab/widgets/radio_cards.dart';
 import 'package:islami/features/radio_tab/widgets/radio_tab_navigator.dart';
 
@@ -17,6 +18,7 @@ class _RadioTabContentState extends State<RadioTabContent> {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        Image.asset(Assets.imagesIslami),
         RadioTabNavigator(controller: _controller, currentPage: currentPage),
         Expanded(
           child: PageView.builder(

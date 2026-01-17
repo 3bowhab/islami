@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:islami/core/constants/app_images.dart';
 import 'package:islami/core/theme/app_text_styles.dart';
 import 'package:islami/core/utils/app_utils.dart';
 import 'package:islami/features/quran_tab/widgets/most_recently.dart';
@@ -14,6 +15,7 @@ class QuranTabContent extends StatelessWidget {
       crossAxisAlignment: .start,
       spacing: AppUtils.height(context) * 0.02,
       children: [
+        Center(child: Image.asset(Assets.imagesIslami)),
         SearchField(),
         Text('Most Recently', style: AppTextStyles.offWhiteBold(16)),
         MostRecently(),
