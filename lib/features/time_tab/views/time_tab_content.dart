@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:islami/core/constants/app_images.dart';
 import 'package:islami/core/theme/app_text_styles.dart';
 import 'package:islami/core/utils/app_utils.dart';
 import 'package:islami/features/time_tab/widgets/azkar.dart';
@@ -11,6 +12,7 @@ class TimeTabContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: [
+        Image.asset(Assets.imagesIslami),
         PrayTime(),
         SizedBox(height: AppUtils.height(context) * (20 / 932)),
         Text('Azkar', style: AppTextStyles.whiteBold(16)),
