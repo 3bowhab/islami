@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:islami/core/constants/app_images.dart';
 import 'package:islami/core/utils/app_utils.dart';
-import 'package:islami/data/models/hadith_model.dart';
+import 'package:islami/data/models/all_hadith_model.dart';
 import 'package:islami/features/hadith_tab/widgets/hadith_card.dart';
 
 class HadithTabContent extends StatefulWidget {
@@ -14,7 +14,7 @@ class HadithTabContent extends StatefulWidget {
 }
 
 class _HadithTabContentState extends State<HadithTabContent> {
-  final List<HadithModel> hadithList = [];
+  final List<AllHadithModel> allHadithList = [];
 
   @override
   void initState() {
@@ -32,10 +32,10 @@ class _HadithTabContentState extends State<HadithTabContent> {
             padding:  EdgeInsets.only(bottom: AppUtils.height(context) * (20 / 932),
             ),
             child: CarouselSlider.builder(
-              itemCount: hadithList.length,
+              itemCount: allHadithList.length,
               itemBuilder:
                   (BuildContext context, int itemIndex, int pageViewIndex) =>
-                      HadithCard(hadithList: hadithList, itemIndex: itemIndex),
+                      HadithCard(hadithList: allHadithList, itemIndex: itemIndex),
               options: CarouselOptions(
                 height: double.infinity,
                 aspectRatio: 16 / 9,
@@ -66,7 +66,7 @@ class _HadithTabContentState extends State<HadithTabContent> {
       List<String> lines = hadithContent.trim().split('\n');
       String hadithTitle = lines[0];
       lines.removeAt(0);
-      hadithList.add(HadithModel(title: hadithTitle, content: lines));
+      allHadithList.add(AllHadithModel(title: hadithTitle, content: lines));
     }
     setState(() {});
   }
