@@ -27,7 +27,6 @@ class _QuranTabContentState extends State<QuranTabContent> {
     loadMostRecent();
   }
 
-
   void loadMostRecent() async {
     mostRecent = await PrefsService.getMostRecentSuraList();
     setState(() {});
@@ -44,16 +43,38 @@ class _QuranTabContentState extends State<QuranTabContent> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: .start,
-      spacing: AppUtils.height(context) * 0.02,
-      children: [
-        Center(child: Image.asset(Assets.imagesIslami)),
-        SearchField(onChanged: onchanged),
-        Text('Most Recently', style: AppTextStyles.offWhiteBold(16)),
-        MostRecently(mostRecentSuras: mostRecent),
+    return CustomScrollView(
+      slivers: [
+        SliverToBoxAdapter(
+          child: Center(child: Image.asset(Assets.imagesIslami)),
+        ),
+
+        SliverToBoxAdapter(child: SearchField(onChanged: onchanged)),
+
+        sizedBox(context),
+        sizedBox(context),
+
+        /// Title
+        SliverToBoxAdapter(
+          child: Text('Most Recently', style: AppTextStyles.offWhiteBold(16)),
+        ),
+
+        sizedBox(context),
+
+        /// Horizontal List
+        SliverToBoxAdapter(child: MostRecently(mostRecentSuras: mostRecent)),
+
+        sizedBox(context),
+
+        /// Suras List (Vertical)
         SurasList(filterList: filterList, onReturn: loadMostRecent),
       ],
+    );
+  }
+
+  SliverToBoxAdapter sizedBox(BuildContext context) {
+    return SliverToBoxAdapter(
+      child: SizedBox(height: AppUtils.height(context) * (10 / 932)),
     );
   }
 }
