@@ -13,7 +13,7 @@ class SebhaTabContent extends StatelessWidget {
         Image.asset(Assets.imagesIslami),
         Text(
           'سَبِّحِ اسْمَ رَبِّكَ الأعلى',
-          style: AppTextStyles.whiteBold(36),
+          style: AppTextStyles.whiteBold(32),
         ),
         const SizedBox(height: 16),
         SebhaCounter(),

@@ -46,7 +46,7 @@ class _RadioCardState extends State<RadioCard> {
                 children: [
                   Text(
                     widget.radioStations[widget.index],
-                    style: AppTextStyles.blackBold(20),
+                    style: AppTextStyles.blackBold(16),
                   ),
                   Spacer(),
                   Row(
