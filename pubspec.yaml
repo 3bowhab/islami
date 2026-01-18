@@ -38,6 +38,7 @@ dependencies:
   introduction_screen: ^4.0.0
   shared_preferences: ^2.5.4
   carousel_slider: ^5.1.1
+  flutter_launcher_icons: ^0.14.4
 
 dev_dependencies:
   flutter_test:
@@ -96,3 +97,8 @@ flutter_assets:
   output_path: lib/core/constants/
   filename: app_images.dart
   field_prefix:
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/splash.png"
