@@ -30,7 +30,6 @@ class _QuranTabContentState extends State<QuranTabContent> {
 
   void loadMostRecent() async {
     mostRecent = await PrefsService.getMostRecentSuraList();
-    print('Most recent suras: $mostRecent');
     setState(() {});
   }
 
