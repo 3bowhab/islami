@@ -2,6 +2,210 @@
 class Assets {
   Assets._();
   
+  /// Assets for filesHadithDriveDownload20260118T195158Z3001
+  /// assets/files/hadith/drive-download-20260118T195158Z-3-001.zip
+  static const String filesHadithDriveDownload20260118T195158Z3001 = "assets/files/hadith/drive-download-20260118T195158Z-3-001.zip";
+
+  /// Assets for filesHadithH1
+  /// assets/files/hadith/h1.txt
+  static const String filesHadithH1 = "assets/files/hadith/h1.txt";
+
+  /// Assets for filesHadithH10
+  /// assets/files/hadith/h10.txt
+  static const String filesHadithH10 = "assets/files/hadith/h10.txt";
+
+  /// Assets for filesHadithH11
+  /// assets/files/hadith/h11.txt
+  static const String filesHadithH11 = "assets/files/hadith/h11.txt";
+
+  /// Assets for filesHadithH12
+  /// assets/files/hadith/h12.txt
+  static const String filesHadithH12 = "assets/files/hadith/h12.txt";
+
+  /// Assets for filesHadithH13
+  /// assets/files/hadith/h13.txt
+  static const String filesHadithH13 = "assets/files/hadith/h13.txt";
+
+  /// Assets for filesHadithH14
+  /// assets/files/hadith/h14.txt
+  static const String filesHadithH14 = "assets/files/hadith/h14.txt";
+
+  /// Assets for filesHadithH15
+  /// assets/files/hadith/h15.txt
+  static const String filesHadithH15 = "assets/files/hadith/h15.txt";
+
+  /// Assets for filesHadithH16
+  /// assets/files/hadith/h16.txt
+  static const String filesHadithH16 = "assets/files/hadith/h16.txt";
+
+  /// Assets for filesHadithH17
+  /// assets/files/hadith/h17.txt
+  static const String filesHadithH17 = "assets/files/hadith/h17.txt";
+
+  /// Assets for filesHadithH18
+  /// assets/files/hadith/h18.txt
+  static const String filesHadithH18 = "assets/files/hadith/h18.txt";
+
+  /// Assets for filesHadithH19
+  /// assets/files/hadith/h19.txt
+  static const String filesHadithH19 = "assets/files/hadith/h19.txt";
+
+  /// Assets for filesHadithH2
+  /// assets/files/hadith/h2.txt
+  static const String filesHadithH2 = "assets/files/hadith/h2.txt";
+
+  /// Assets for filesHadithH20
+  /// assets/files/hadith/h20.txt
+  static const String filesHadithH20 = "assets/files/hadith/h20.txt";
+
+  /// Assets for filesHadithH21
+  /// assets/files/hadith/h21.txt
+  static const String filesHadithH21 = "assets/files/hadith/h21.txt";
+
+  /// Assets for filesHadithH22
+  /// assets/files/hadith/h22.txt
+  static const String filesHadithH22 = "assets/files/hadith/h22.txt";
+
+  /// Assets for filesHadithH23
+  /// assets/files/hadith/h23.txt
+  static const String filesHadithH23 = "assets/files/hadith/h23.txt";
+
+  /// Assets for filesHadithH24
+  /// assets/files/hadith/h24.txt
+  static const String filesHadithH24 = "assets/files/hadith/h24.txt";
+
+  /// Assets for filesHadithH25
+  /// assets/files/hadith/h25.txt
+  static const String filesHadithH25 = "assets/files/hadith/h25.txt";
+
+  /// Assets for filesHadithH26
+  /// assets/files/hadith/h26.txt
+  static const String filesHadithH26 = "assets/files/hadith/h26.txt";
+
+  /// Assets for filesHadithH27
+  /// assets/files/hadith/h27.txt
+  static const String filesHadithH27 = "assets/files/hadith/h27.txt";
+
+  /// Assets for filesHadithH28
+  /// assets/files/hadith/h28.txt
+  static const String filesHadithH28 = "assets/files/hadith/h28.txt";
+
+  /// Assets for filesHadithH29
+  /// assets/files/hadith/h29.txt
+  static const String filesHadithH29 = "assets/files/hadith/h29.txt";
+
+  /// Assets for filesHadithH3
+  /// assets/files/hadith/h3.txt
+  static const String filesHadithH3 = "assets/files/hadith/h3.txt";
+
+  /// Assets for filesHadithH30
+  /// assets/files/hadith/h30.txt
+  static const String filesHadithH30 = "assets/files/hadith/h30.txt";
+
+  /// Assets for filesHadithH31
+  /// assets/files/hadith/h31.txt
+  static const String filesHadithH31 = "assets/files/hadith/h31.txt";
+
+  /// Assets for filesHadithH32
+  /// assets/files/hadith/h32.txt
+  static const String filesHadithH32 = "assets/files/hadith/h32.txt";
+
+  /// Assets for filesHadithH33
+  /// assets/files/hadith/h33.txt
+  static const String filesHadithH33 = "assets/files/hadith/h33.txt";
+
+  /// Assets for filesHadithH34
+  /// assets/files/hadith/h34.txt
+  static const String filesHadithH34 = "assets/files/hadith/h34.txt";
+
+  /// Assets for filesHadithH35
+  /// assets/files/hadith/h35.txt
+  static const String filesHadithH35 = "assets/files/hadith/h35.txt";
+
+  /// Assets for filesHadithH36
+  /// assets/files/hadith/h36.txt
+  static const String filesHadithH36 = "assets/files/hadith/h36.txt";
+
+  /// Assets for filesHadithH37
+  /// assets/files/hadith/h37.txt
+  static const String filesHadithH37 = "assets/files/hadith/h37.txt";
+
+  /// Assets for filesHadithH38
+  /// assets/files/hadith/h38.txt
+  static const String filesHadithH38 = "assets/files/hadith/h38.txt";
+
+  /// Assets for filesHadithH39
+  /// assets/files/hadith/h39.txt
+  static const String filesHadithH39 = "assets/files/hadith/h39.txt";
+
+  /// Assets for filesHadithH4
+  /// assets/files/hadith/h4.txt
+  static const String filesHadithH4 = "assets/files/hadith/h4.txt";
+
+  /// Assets for filesHadithH40
+  /// assets/files/hadith/h40.txt
+  static const String filesHadithH40 = "assets/files/hadith/h40.txt";
+
+  /// Assets for filesHadithH41
+  /// assets/files/hadith/h41.txt
+  static const String filesHadithH41 = "assets/files/hadith/h41.txt";
+
+  /// Assets for filesHadithH42
+  /// assets/files/hadith/h42.txt
+  static const String filesHadithH42 = "assets/files/hadith/h42.txt";
+
+  /// Assets for filesHadithH43
+  /// assets/files/hadith/h43.txt
+  static const String filesHadithH43 = "assets/files/hadith/h43.txt";
+
+  /// Assets for filesHadithH44
+  /// assets/files/hadith/h44.txt
+  static const String filesHadithH44 = "assets/files/hadith/h44.txt";
+
+  /// Assets for filesHadithH45
+  /// assets/files/hadith/h45.txt
+  static const String filesHadithH45 = "assets/files/hadith/h45.txt";
+
+  /// Assets for filesHadithH46
+  /// assets/files/hadith/h46.txt
+  static const String filesHadithH46 = "assets/files/hadith/h46.txt";
+
+  /// Assets for filesHadithH47
+  /// assets/files/hadith/h47.txt
+  static const String filesHadithH47 = "assets/files/hadith/h47.txt";
+
+  /// Assets for filesHadithH48
+  /// assets/files/hadith/h48.txt
+  static const String filesHadithH48 = "assets/files/hadith/h48.txt";
+
+  /// Assets for filesHadithH49
+  /// assets/files/hadith/h49.txt
+  static const String filesHadithH49 = "assets/files/hadith/h49.txt";
+
+  /// Assets for filesHadithH5
+  /// assets/files/hadith/h5.txt
+  static const String filesHadithH5 = "assets/files/hadith/h5.txt";
+
+  /// Assets for filesHadithH50
+  /// assets/files/hadith/h50.txt
+  static const String filesHadithH50 = "assets/files/hadith/h50.txt";
+
+  /// Assets for filesHadithH6
+  /// assets/files/hadith/h6.txt
+  static const String filesHadithH6 = "assets/files/hadith/h6.txt";
+
+  /// Assets for filesHadithH7
+  /// assets/files/hadith/h7.txt
+  static const String filesHadithH7 = "assets/files/hadith/h7.txt";
+
+  /// Assets for filesHadithH8
+  /// assets/files/hadith/h8.txt
+  static const String filesHadithH8 = "assets/files/hadith/h8.txt";
+
+  /// Assets for filesHadithH9
+  /// assets/files/hadith/h9.txt
+  static const String filesHadithH9 = "assets/files/hadith/h9.txt";
+
   /// Assets for filesSura1
   /// assets/files/sura/1.txt
   static const String filesSura1 = "assets/files/sura/1.txt";
@@ -590,6 +794,14 @@ class Assets {
   /// assets/images/2x/branding.png
   static const String images2xBranding = "assets/images/2x/branding.png";
 
+  /// Assets for images2xHadithBackground
+  /// assets/images/2x/hadith_background.png
+  static const String images2xHadithBackground = "assets/images/2x/hadith_background.png";
+
+  /// Assets for images2xHadithTabBackground
+  /// assets/images/2x/hadith_tab_background.png
+  static const String images2xHadithTabBackground = "assets/images/2x/hadith_tab_background.png";
+
   /// Assets for images2xImgBottomDecoration
   /// assets/images/2x/img_bottom_decoration.png
   static const String images2xImgBottomDecoration = "assets/images/2x/img_bottom_decoration.png";
@@ -654,6 +866,10 @@ class Assets {
   /// assets/images/2x/sura_number.png
   static const String images2xSuraNumber = "assets/images/2x/sura_number.png";
 
+  /// Assets for images2xTimeAckground
+  /// assets/images/2x/time_ackground.png
+  static const String images2xTimeAckground = "assets/images/2x/time_ackground.png";
+
   /// Assets for images3xAzkar1
   /// assets/images/3x/azkar1.png
   static const String images3xAzkar1 = "assets/images/3x/azkar1.png";
@@ -669,6 +885,14 @@ class Assets {
   /// Assets for images3xBranding
   /// assets/images/3x/branding.png
   static const String images3xBranding = "assets/images/3x/branding.png";
+
+  /// Assets for images3xHadithBackground
+  /// assets/images/3x/hadith_background.png
+  static const String images3xHadithBackground = "assets/images/3x/hadith_background.png";
+
+  /// Assets for images3xHadithTabBackground
+  /// assets/images/3x/hadith_tab_background.png
+  static const String images3xHadithTabBackground = "assets/images/3x/hadith_tab_background.png";
 
   /// Assets for images3xImgBottomDecoration
   /// assets/images/3x/img_bottom_decoration.png
@@ -734,6 +958,10 @@ class Assets {
   /// assets/images/3x/sura_number.png
   static const String images3xSuraNumber = "assets/images/3x/sura_number.png";
 
+  /// Assets for images3xTimeAckground
+  /// assets/images/3x/time_ackground.png
+  static const String images3xTimeAckground = "assets/images/3x/time_ackground.png";
+
   /// Assets for imagesAzkar1
   /// assets/images/azkar1.png
   static const String imagesAzkar1 = "assets/images/azkar1.png";
@@ -749,6 +977,14 @@ class Assets {
   /// Assets for imagesBranding
   /// assets/images/branding.png
   static const String imagesBranding = "assets/images/branding.png";
+
+  /// Assets for imagesHadithBackground
+  /// assets/images/hadith_background.png
+  static const String imagesHadithBackground = "assets/images/hadith_background.png";
+
+  /// Assets for imagesHadithTabBackground
+  /// assets/images/hadith_tab_background.png
+  static const String imagesHadithTabBackground = "assets/images/hadith_tab_background.png";
 
   /// Assets for imagesImgBottomDecoration
   /// assets/images/img_bottom_decoration.png
@@ -813,5 +1049,9 @@ class Assets {
   /// Assets for imagesSuraNumber
   /// assets/images/sura_number.png
   static const String imagesSuraNumber = "assets/images/sura_number.png";
+
+  /// Assets for imagesTimeAckground
+  /// assets/images/time_ackground.png
+  static const String imagesTimeAckground = "assets/images/time_ackground.png";
 }
 

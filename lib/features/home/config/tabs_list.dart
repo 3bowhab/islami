@@ -1,5 +1,5 @@
-import 'package:flutter/widgets.dart';
 import 'package:islami/core/constants/app_images.dart';
+import 'package:islami/features/hadith_tab/view/hadith_tab_content.dart';
 import 'package:islami/features/home/models/tabs_model.dart';
 import 'package:islami/features/quran_tab/view/quran_tab_content.dart';
 import 'package:islami/features/radio_tab/view/radio_tab_content.dart';
@@ -17,8 +17,8 @@ class HomeTabsConfig {
     TabsModel(
       label: 'Hadith',
       iconpath: Assets.iconsHadith,
-      backgroudImage: Assets.imagesBackground,
-      content: Container(),
+      backgroudImage: Assets.imagesHadithTabBackground,
+      content: HadithTabContent(),
     ),
     TabsModel(
       label: 'Sebha',
@@ -35,7 +35,7 @@ class HomeTabsConfig {
     TabsModel(
       label: 'Time',
       iconpath: Assets.iconsTime,
-      backgroudImage: Assets.imagesBackground,
+      backgroudImage: Assets.imagesTimeAckground,
       content: TimeTabContent(),
     ),
   ];

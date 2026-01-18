@@ -31,7 +31,7 @@ class _SouraDetailsViewState extends State<SouraDetailsView> {
     loadSuraFile(sura.suraNum);
 
     return Scaffold(
-      appBar: AppBar(title: Text(sura.englishName)),
+      appBar: AppBar(title: Text(sura.englishName, style: AppTextStyles.goldBold(20),)),
       body: SafeArea(
         child: Stack(
           children: [
