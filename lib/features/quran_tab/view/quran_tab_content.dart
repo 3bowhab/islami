@@ -4,6 +4,7 @@ import 'package:islami/core/theme/app_text_styles.dart';
 import 'package:islami/core/utils/app_utils.dart';
 import 'package:islami/data/config/sura_details_config.dart';
 import 'package:islami/data/models/sura_model.dart';
+import 'package:islami/data/service/prefs_service.dart';
 import 'package:islami/features/quran_tab/widgets/most_recently.dart';
 import 'package:islami/features/quran_tab/widgets/search_field.dart';
 import 'package:islami/features/quran_tab/widgets/suras_list.dart';
@@ -17,11 +18,20 @@ class QuranTabContent extends StatefulWidget {
 
 class _QuranTabContentState extends State<QuranTabContent> {
   List<SuraModel> filterList = [];
+  List<int> mostRecent = [];
 
   @override
   void initState() {
     super.initState();
     filterList = SuraDetailsConfig.suraList;
+    loadMostRecent();
+  }
+
+
+  void loadMostRecent() async {
+    mostRecent = await PrefsService.getMostRecentSuraList();
+    print('Most recent suras: $mostRecent');
+    setState(() {});
   }
 
   void onchanged(String text) {
@@ -42,8 +52,8 @@ class _QuranTabContentState extends State<QuranTabContent> {
         Center(child: Image.asset(Assets.imagesIslami)),
         SearchField(onChanged: onchanged),
         Text('Most Recently', style: AppTextStyles.offWhiteBold(16)),
-        MostRecently(),
-        SurasList(filterList: filterList),
+        MostRecently(mostRecentSuras: mostRecent),
+        SurasList(filterList: filterList, onReturn: loadMostRecent),
       ],
     );
   }
