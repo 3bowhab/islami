@@ -3,10 +3,12 @@ import 'package:islami/core/theme/app_colors.dart';
 import 'package:islami/core/constants/app_images.dart';
 import 'package:islami/core/theme/app_text_styles.dart';
 import 'package:islami/core/utils/app_utils.dart';
+import 'package:islami/data/models/sura_model.dart';
 
 class MostRecentlyItem extends StatelessWidget {
+  final SuraModel sura;
   const MostRecentlyItem({
-    super.key,
+    super.key, required this.sura,
   });
 
   @override
@@ -28,14 +30,14 @@ class MostRecentlyItem extends StatelessWidget {
             mainAxisAlignment: .spaceEvenly,
             children: [
               Text(
-                'Al-Fatiha',
+                sura.englishName,
                 style: AppTextStyles.blackBold(24),
               ),
               Text(
-                'الفاتحه',
+                sura.arabicName,
                 style: AppTextStyles.blackBold(24),
               ),
-              Text('7 Verses', style: AppTextStyles.blackBold(14)),
+              Text('${sura.ayaCount} Verses', style: AppTextStyles.blackBold(14)),
             ],
           ),
           Image.asset(Assets.imagesImgMostRecent),

@@ -21,14 +21,14 @@ class _SouraDetailsViewState extends State<SouraDetailsView> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      loadSuraFile(sura.index);
+      loadSuraFile(sura.suraNum);
     });
   }
 
   @override
   Widget build(BuildContext context) {
     sura = ModalRoute.of(context)!.settings.arguments as SuraModel;
-    loadSuraFile(sura.index);
+    loadSuraFile(sura.suraNum);
 
     return Scaffold(
       appBar: AppBar(title: Text(sura.englishName)),
@@ -40,51 +40,47 @@ class _SouraDetailsViewState extends State<SouraDetailsView> {
               width: double.infinity,
               fit: BoxFit.fill,
             ),
-            if (suraVerses.isEmpty) 
-              Center(
-                child: CircularProgressIndicator(
-                  color: AppColors.gold,
-                ),
-              )
+            if (suraVerses.isEmpty)
+              Center(child: CircularProgressIndicator(color: AppColors.gold))
             else
-            SingleChildScrollView(
-              child: Column(
-                children: [
-                  SizedBox(height: AppUtils.height(context) * (8 / 932)),
-                  Center(
-                    child: Text(
-                      sura.arabicName,
-                      style: AppTextStyles.goldBold(24),
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(
-                      horizontal: AppUtils.width(context) * (20 / 430),
-                      vertical: AppUtils.height(context) * (50 / 932),
-                    ),
-                    child: Text.rich(
-                      textDirection: TextDirection.rtl,
-                      textAlign: TextAlign.center,
-                      
-                      TextSpan(
-                        children: [
-                          for (int i = 0; i < suraVerses.length; i++) ...[
-                            TextSpan(
-                              text: suraVerses[i],
-                              style: AppTextStyles.goldBold(20),
-                            ),
-                            TextSpan(
-                              text: '[${i + 1}]',
-                              style: AppTextStyles.goldBold(20),
-                            ),
-                          ],
-                        ],
+              SingleChildScrollView(
+                child: Column(
+                  children: [
+                    SizedBox(height: AppUtils.height(context) * (8 / 932)),
+                    Center(
+                      child: Text(
+                        sura.arabicName,
+                        style: AppTextStyles.goldBold(24),
                       ),
                     ),
-                  ),
-                ],
+                    Padding(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: AppUtils.width(context) * (20 / 430),
+                        vertical: AppUtils.height(context) * (50 / 932),
+                      ),
+                      child: Text.rich(
+                        textDirection: TextDirection.rtl,
+                        textAlign: TextAlign.center,
+
+                        TextSpan(
+                          children: [
+                            for (int i = 0; i < suraVerses.length; i++) ...[
+                              TextSpan(
+                                text: suraVerses[i],
+                                style: AppTextStyles.goldBold(20),
+                              ),
+                              TextSpan(
+                                text: '[${i + 1}]',
+                                style: AppTextStyles.goldBold(20),
+                              ),
+                            ],
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
-            ),
           ],
         ),
       ),

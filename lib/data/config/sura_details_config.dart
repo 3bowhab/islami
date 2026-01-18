@@ -7,7 +7,7 @@ class SuraDetailsConfig {
       arabicName: arabicQuranSuras[index],
       englishName: englishQuranSurahs[index],
       ayaCount: ayaNumber[index],
-      index: index,
+      suraNum: index,
     ),
   );
   
