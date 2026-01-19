@@ -7,6 +7,8 @@ import 'package:islami/features/home/view/home_view.dart';
 import 'package:islami/features/onboarding/view/onboarding_views.dart';
 import 'package:islami/features/quran_tab/view/soura_details_view.dart';
 
+final RouteObserver<ModalRoute<void>> routeObserver = RouteObserver<ModalRoute<void>>();
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
@@ -22,6 +24,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      navigatorObservers: [routeObserver],
       debugShowCheckedModeBanner: false,
       initialRoute: seenIntro ? AppRoutes.homeView : AppRoutes.onboardingView,
       routes: {
