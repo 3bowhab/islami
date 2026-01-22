@@ -1,16 +1,52 @@
-# islami
+# Islami App
 
-A new Flutter project.
+Islami is a Flutter training project built during my learning journey with Route.
+The main focus of this project is building clean UI, proper navigation, and a well-structured Flutter application.
 
-## Getting Started
+## App Overview
 
-This project is a starting point for a Flutter application.
+The application allows users to:
+- Read Quran Surahs
+- Continue reading from the last opened Surah
+- Read Hadiths
+- Use a digital Tasbeeh
+- Browse Islamic Radio UI (UI only)
+- View Prayer Times UI
+- See remaining time for the next prayer
 
-A few resources to get you started if this is your first Flutter project:
+Note:
+Some features are UI-based only and use dummy data, as this project focuses on learning and practice.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Demo Video
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+App Demo: https://drive.google.com/file/d/1kM5znhKcf32zM4wDL-YmSpwUtX6_vcFh/view?usp=drive_link
+
+## Technologies & Packages Used
+
+- Flutter
+- Dart
+- shared_preferences
+- flutter_native_splash
+- flutter_launcher_icons
+- introduction_screen
+- carousel_slider
+- Local assets for Quran and Hadith
+- Custom Arabic font (Janna)
+
+## Project Structure
+
+- Feature-based architecture
+- Reusable widgets
+- Clean and readable code
+- Organized assets and constants
+
+## Future Improvements
+
+- Connect real prayer times API
+- Activate radio streaming
+- Add Quran audio playback
+- Persist data using local storage
+
+## Author
+
+Ali Ibrahim
