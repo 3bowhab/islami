@@ -8,6 +8,7 @@ import 'package:islami/data/service/prefs_service.dart';
 import 'package:islami/features/quran_tab/widgets/most_recently.dart';
 import 'package:islami/features/quran_tab/widgets/search_field.dart';
 import 'package:islami/features/quran_tab/widgets/suras_list.dart';
+import 'package:islami/main.dart';
 
 class QuranTabContent extends StatefulWidget {
   const QuranTabContent({super.key});
@@ -16,7 +17,7 @@ class QuranTabContent extends StatefulWidget {
   State<QuranTabContent> createState() => _QuranTabContentState();
 }
 
-class _QuranTabContentState extends State<QuranTabContent> {
+class _QuranTabContentState extends State<QuranTabContent> with RouteAware {
   List<SuraModel> filterList = [];
   List<int> mostRecent = [];
 
@@ -24,6 +25,24 @@ class _QuranTabContentState extends State<QuranTabContent> {
   void initState() {
     super.initState();
     filterList = SuraDetailsConfig.suraList;
+    loadMostRecent();
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    routeObserver.subscribe(this, ModalRoute.of(context)!);
+  }
+
+  @override
+  void dispose() {
+    routeObserver.unsubscribe(this);
+    super.dispose();
+  }
+
+  @override
+  void didPopNext() {
+    super.didPopNext();
     loadMostRecent();
   }
 
@@ -67,7 +86,7 @@ class _QuranTabContentState extends State<QuranTabContent> {
         sizedBox(context),
 
         /// Suras List (Vertical)
-        SurasList(filterList: filterList, onReturn: loadMostRecent),
+        SurasList(filterList: filterList),
       ],
     );
   }

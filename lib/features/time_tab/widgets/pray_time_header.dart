@@ -48,9 +48,9 @@ class PrayTimeHeader extends StatelessWidget {
           padding: const EdgeInsets.only(top: 18, left: 18, right: 18),
           child: Row(
             children: [
-              Text('16 Jul,\n2024', style: AppTextStyles.whiteBold(20),),
+              Text('16 Jul,\n2024', style: AppTextStyles.whiteBold(16),),
               Spacer(),
-              Text('09 Muh,\n1446', textAlign: TextAlign.end, style: AppTextStyles.whiteBold(20)),
+              Text('09 Muh,\n1446', textAlign: TextAlign.end, style: AppTextStyles.whiteBold(16)),
             ],
           ),
         ),

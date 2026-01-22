@@ -9,8 +9,7 @@ import 'package:islami/data/service/prefs_service.dart';
 class SuraListTile extends StatelessWidget {
   final int index;
   final List<SuraModel> filterList;
-  final VoidCallback onReturn;
-  const SuraListTile({super.key, required this.index, required this.filterList, required this.onReturn});
+  const SuraListTile({super.key, required this.index, required this.filterList,});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +17,6 @@ class SuraListTile extends StatelessWidget {
       onTap: () async {
         PrefsService.saveNewSuraList(filterList[index].suraNum);
         await Navigator.pushNamed(context, AppRoutes.souraDetailsView, arguments: filterList[index]);
-        onReturn();
       },
       contentPadding: EdgeInsets.zero,
       leading: Container(

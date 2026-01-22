@@ -24,7 +24,7 @@ class AzkarCard extends StatelessWidget {
             spacing: AppUtils.height(context) * (10 / 932),
             children: [
               Image.asset(imagePath, fit: BoxFit.cover),
-              Text(title, style: AppTextStyles.whiteBold(20),)
+              Text(title, style: AppTextStyles.whiteBold(16),)
             ],
           ),
         ),

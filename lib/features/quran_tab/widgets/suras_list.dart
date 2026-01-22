@@ -8,11 +8,9 @@ class SurasList extends StatelessWidget {
   const SurasList({
     super.key,
     required this.filterList,
-    required this.onReturn,
   });
 
   final List<SuraModel> filterList;
-  final VoidCallback onReturn;
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +21,6 @@ class SurasList extends StatelessWidget {
             SuraListTile(
               index: index,
               filterList: filterList,
-              onReturn: onReturn,
             ),
             Divider(
               color: AppColors.white,

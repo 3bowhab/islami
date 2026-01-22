@@ -53,9 +53,9 @@ class _SebhaCounterState extends State<SebhaCounter> {
                   children: [
                     Text(
                       tasbeehWords[index],
-                      style: AppTextStyles.whiteBold(36),
+                      style: AppTextStyles.whiteBold(32),
                     ),
-                    Text('$counter', style: AppTextStyles.whiteBold(36)),
+                    Text('$counter', style: AppTextStyles.whiteBold(32)),
                   ],
                 ),
               ],

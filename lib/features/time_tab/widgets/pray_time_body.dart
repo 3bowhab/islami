@@ -21,7 +21,7 @@ class PrayTimeBody extends StatelessWidget {
             vertical: AppUtils.height(context) * (15 / 932),
           ),
           child: Column(
-            spacing: AppUtils.height(context) * (25 / 932),
+            spacing: AppUtils.height(context) * (20 / 932),
             children: [
               const CardsSlider(),
               const PrayTimeBottom(),
