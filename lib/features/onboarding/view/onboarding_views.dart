@@ -6,7 +6,6 @@ import 'package:islami/core/theme/app_text_styles.dart';
 import 'package:islami/features/onboarding/view_model/pages_list.dart';
 import 'package:islami/data/service/prefs_service.dart';
 
-
 class OnBoardingViews extends StatelessWidget {
   const OnBoardingViews({super.key});
 
@@ -20,19 +19,16 @@ class OnBoardingViews extends StatelessWidget {
       done: Text("Finish", style: AppTextStyles.goldBold(16)),
       back: Text("Back", style: AppTextStyles.goldBold(16)),
       autoScrollDuration: 10000,
-      controlsPadding: const EdgeInsets.only(
-        bottom: 50, 
-      ),
+      controlsPadding: const EdgeInsets.only(bottom: 50),
       dotsDecorator: DotsDecorator(
         activeColor: AppColors.gold,
         color: AppColors.grey,
         activeSize: const Size(22, 10),
-        activeShape: RoundedRectangleBorder(
-          borderRadius: .circular(25),
-        ),
+        activeShape: RoundedRectangleBorder(borderRadius: .circular(25)),
       ),
       onDone: () async {
         await PrefsService.setIntroSeen();
+        if (!context.mounted) return;
         Navigator.pushReplacementNamed(context, AppRoutes.homeView);
       },
     );

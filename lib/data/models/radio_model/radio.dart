@@ -17,9 +17,9 @@ class RadioItem {
 		return 'Radio(id: $id, name: $name, url: $url, recentDate: $recentDate)';
 	}
 
-	factory RadioItem.fromJson(Map<String, dynamic> json) => _$RadioFromJson(json);
+	factory RadioItem.fromJson(Map<String, dynamic> json) => _$RadioItemFromJson(json);
 
-	Map<String, dynamic> toJson() => _$RadioToJson(this);
+	Map<String, dynamic> toJson() => _$RadioItemToJson(this);
 
 	RadioItem copyWith({
 		int? id,

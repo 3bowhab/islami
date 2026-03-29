@@ -44,6 +44,7 @@ dependencies:
   provider: ^6.1.5+1
   just_audio: ^0.10.5
   audio_visualizer: ^1.1.0
+  intl: ^0.20.2
 
 dev_dependencies:
   flutter_test:
