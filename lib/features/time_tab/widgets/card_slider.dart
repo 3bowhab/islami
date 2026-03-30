@@ -3,9 +3,11 @@ import 'package:islami/core/theme/app_colors.dart';
 import 'package:islami/core/theme/app_text_styles.dart';
 import 'package:islami/core/utils/app_utils.dart';
 import 'package:islami/data/config/pray_time_data.dart';
+import 'package:islami/features/time_tab/logic/time_view_model.dart';
 
 class CardsSlider extends StatefulWidget {
-  const CardsSlider({super.key});
+  final TimeViewModel timeViewModel;
+  const CardsSlider({super.key, required this.timeViewModel});
 
   @override
   State<CardsSlider> createState() => _CardsSliderState();
@@ -15,7 +17,6 @@ class _CardsSliderState extends State<CardsSlider> {
   final PageController _controller = PageController(viewportFraction: 0.30);
   int currentIndex = 0;
 
-
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -23,7 +24,7 @@ class _CardsSliderState extends State<CardsSlider> {
       width: double.infinity,
       child: PageView.builder(
         controller: _controller,
-        itemCount: 5,
+        itemCount: widget.timeViewModel.prayerValues.length,
         onPageChanged: (index) {
           setState(() {
             currentIndex = index;
@@ -31,6 +32,7 @@ class _CardsSliderState extends State<CardsSlider> {
         },
         itemBuilder: (context, index) {
           final bool isActive = index == currentIndex;
+          final String time = widget.timeViewModel.prayerValues[index];
 
           return AnimatedScale(
             scale: isActive ? 1.0 : 0.8,
@@ -47,9 +49,18 @@ class _CardsSliderState extends State<CardsSlider> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(PrayTimeData.prayNames[index], style: AppTextStyles.whiteBold(16)),
-                  Text(PrayTimeData.prayerTimes[index].substring(0, 5)  , style: AppTextStyles.whiteBold(32)),
-                  Text(PrayTimeData.prayerTimes[index].substring(6), style: AppTextStyles.whiteBold(16)),
+                  Text(
+                    PrayTimeData.prayNames[index],
+                    style: AppTextStyles.whiteBold(16),
+                  ),
+                  Text(
+                    time.substring(0, 5),
+                    style: AppTextStyles.whiteBold(32),
+                  ),
+                  Text(
+                    time.substring(6),
+                    style: AppTextStyles.whiteBold(16),
+                  ),
                 ],
               ),
             ),

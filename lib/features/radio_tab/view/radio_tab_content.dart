@@ -3,6 +3,7 @@ import 'package:islami/core/constants/app_images.dart';
 import 'package:islami/features/radio_tab/widgets/radio_cards.dart';
 import 'package:islami/features/radio_tab/widgets/radio_tab_navigator.dart';
 
+
 class RadioTabContent extends StatefulWidget {
   const RadioTabContent({super.key});
 
@@ -30,6 +31,7 @@ class _RadioTabContentState extends State<RadioTabContent> {
               });
             },
             itemBuilder: (context, index) {
+              debugPrint('Current Page: $index');
               return RadioCards(currentIndex: index);
             },
           ),

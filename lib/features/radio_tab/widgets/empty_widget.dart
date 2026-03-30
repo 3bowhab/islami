@@ -1,0 +1,12 @@
+import 'package:flutter/material.dart';
+
+class EmptyWidget extends StatelessWidget {
+  const EmptyWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Center(
+      child: Text('there is nothing to show, please try again later'),
+    );
+  }
+}
