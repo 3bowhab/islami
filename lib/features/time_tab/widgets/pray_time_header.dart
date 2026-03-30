@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:islami/core/theme/app_colors.dart';
 import 'package:islami/core/theme/app_text_styles.dart';
 import 'package:islami/core/utils/app_utils.dart';
+import 'package:islami/features/time_tab/logic/time_view_model.dart';
 import 'package:islami/features/time_tab/widgets/triangle_clipper.dart';
 
 class PrayTimeHeader extends StatelessWidget {
-  const PrayTimeHeader({
-    super.key,
-  });
+  final TimeViewModel timeViewModel;
+  const PrayTimeHeader({super.key, required this.timeViewModel});
 
   @override
   Widget build(BuildContext context) {
@@ -31,11 +31,8 @@ class PrayTimeHeader extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 18),
                 child: Column(
                   children: [
-                    Text(
-                      'Pray Time',
-                      style: AppTextStyles.lightBlackBold(20),
-                    ),
-                    Text('Tuesday', style: AppTextStyles.blackBold(20)),
+                    Text('Pray Time', style: AppTextStyles.lightBlackBold(20)),
+                    Text(timeViewModel.dayName ?? '', style: AppTextStyles.blackBold(20)),
                   ],
                 ),
               ),
@@ -43,14 +40,21 @@ class PrayTimeHeader extends StatelessWidget {
             TriangleClipper(clipper: RightTriangleClipper()),
           ],
         ),
-        
+
         Padding(
           padding: const EdgeInsets.only(top: 18, left: 18, right: 18),
           child: Row(
             children: [
-              Text('16 Jul,\n2024', style: AppTextStyles.whiteBold(16),),
+              Text(
+                timeViewModel.greDate ?? '',
+                style: AppTextStyles.whiteBold(16),
+              ),
               Spacer(),
-              Text('09 Muh,\n1446', textAlign: TextAlign.end, style: AppTextStyles.whiteBold(16)),
+              Text(
+                timeViewModel.hijriDate ?? '',
+                textAlign: TextAlign.end,
+                style: AppTextStyles.whiteBold(16),
+              ),
             ],
           ),
         ),

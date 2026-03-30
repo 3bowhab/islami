@@ -1,6 +1,7 @@
 class PrayTimeData {
   static const List<String> prayNames = [
     'Fajr',
+    'Sunrise',
     'Dhuhr',
     'Asr',
     'Maghrib',

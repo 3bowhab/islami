@@ -5,9 +5,11 @@ import 'package:islami/core/theme/app_colors.dart';
 import 'package:islami/core/theme/app_text_styles.dart';
 import 'package:islami/core/utils/app_utils.dart';
 import 'package:islami/features/time_tab/logic/get_next_prayer.dart';
+import 'package:islami/features/time_tab/logic/time_view_model.dart';
 
 class PrayTimeBottom extends StatefulWidget {
-  const PrayTimeBottom({super.key});
+  final TimeViewModel timeViewModel;
+  const PrayTimeBottom({super.key, required this.timeViewModel});
 
   @override
   State<PrayTimeBottom> createState() => _PrayTimeBottomState();
@@ -30,7 +32,7 @@ class _PrayTimeBottomState extends State<PrayTimeBottom> {
 
   void updateNextPrayer() {
     setState(() {
-      nextPrayer = getNextPrayer();
+      nextPrayer = getNextPrayer(widget.timeViewModel.prayerValues);
     });
   }
 

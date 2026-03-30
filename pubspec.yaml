@@ -45,6 +45,7 @@ dependencies:
   just_audio: ^0.10.5
   audio_visualizer: ^1.1.0
   intl: ^0.20.2
+  collection: ^1.19.1
 
 dev_dependencies:
   flutter_test:
